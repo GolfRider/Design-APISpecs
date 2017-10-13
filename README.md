@@ -1,4 +1,4 @@
-## Design-APISpecs
+### Design API Specs Using API Blueprint
 1. This nodejs based tool uses the apiblueprint spec files to generate pdf and html docs.
 2. To know more about API Blueprint, please visit :https://apiblueprint.org
 3. To install the dependecies, run this command: npm install at the root directory of the app
