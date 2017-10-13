@@ -1,0 +1,119 @@
+FORMAT: 1A
+HOST: https://abcbookstore.com/api/<version>
+
+# ABC Bookstore Rest APIs  
+
+## Books API [/books]
+Book APIs provides following operations:
+  + View and list books
+
+### Add New Book [POST /books]
+Add a new book of a given publisher
+ 
++ Request (application/json)
+  + Headers
+  
+               Authorization: APIKEY 12334809345345345 - Sent for authenticating the request
+            
+  + Attributes (AddBookRequest)
++ Response 200 (application/json)
+  + Attributes (AddBookResponse)
++ Response 400 (application/json)
+    
+  
+  
+  
+### Get Book [GET /books/{bookId}]
+Get the details of a given book id (uuid)
+
++ bookId (string) - books's UUID
+
++ Parameters
+  + bookId (string, required) - UUID of the book
++ Request (application/json)
+  + Headers
+  
+            Authorization: APIKEY 123345345345345345 - Sent for authenticating the request
+              
++ Response 200 (application/json)
+  + Attributes
+       + Include CommonBook200Response
+       + Include MoreBookInfo
+       
+ 
+  
+
+### Get List of Books with Pagination [GET /books/{?offset,limit}]
+This endpoint gets the list of books of a given publisher
+The results are paginated by records using 'offset' and 'limit' parameters
+
++ offset (number, optional) - pagination 'offset' value
++ limit (number, optional) - pagination 'limit' value
+
++ Parameters
+  + offset (number, optional) - pagination 'offset' value, 
+                                default value is '0'
+  + limit (number, optional) - pagination 'limit' value
+                               max value: 75, default value: 25 
+                               
++ Request (application/json)
+  + Headers
+  
+            Authorization: APIKEY 123345345345345345 - Sent for authenticating the request
++ Response 200 (application/json)
+  + Attributes 
+       + Include CommonBook200Response
+       + books (array[MoreBookInfo])
+       + paginationInfo (PaginationInfo)
+   
+   
+  
+  
+  
+## Data Structures
+
+### AddBookRequest
++ Data (CommonBook)
+      + US Price: 10 USD (string)  - US Price in dollars
+      + UK Price: 5 EUROS (string)  - UK Price in euros
+
+
+     
+### AddBookResponse
++ status: success (string)
++ bookID:  f6213ad5-41da-4b36-8fe4-3ea432af4efc (string) - UUID of the book    
+
+
+
+
+### CommonBook
++ ISBN: 12312313123 (string, required) - ISBN of the book
++ Author: Robin Sharma (string, required)   
++ Title: The monk who sold his ferrari (string, required)
++ Price: 20 USD (number)
++ DateOfPublication: 2015-05-04 (string)
+
+
+### CommonBook200Response
++ code: 200 (number)
++ status: success (string)
+
+### MoreBookInfo 
++ id: f7213ad5-41da-4b55-8fe4-3ea123af4efc (string) - uuid of book
++ Include CommonBook
++ isEnglishOnly: false (boolean)
++ isEbookVersionAvailable: true (boolean)
+
+
+
+### PaginationInfo
+ + limit: 25 (number)  - max records to fetch
+ + size: 2 (number)  - fetched records size
+ + total: 20 (number)  - total records count
+ + currentPage: /books?offset=20&limit=10 (string)  - current page url suffix
+ + nextPage: /books?offset=30&limit=10 (string)  - next page url suffix
+ + previousPage: /books?offset=10&limit=10 (string)  - previous page url suffix
+
+
+
+

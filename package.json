@@ -1,0 +1,17 @@
+{
+  "name": "book_api_design",
+  "version": "1.0.0",
+  "description": "Generates pdf & html documentation for Book APIs",
+  "main": "gen_api_docs.js",
+  "dependencies": {
+    "aglio": "*",
+    "protagonist": "*",
+    "commander": "*",
+    "html-pdf": "*"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "keywords": [],
+  "author": "GolfRider",
+  "license": "MIT"
+}
