@@ -8,3 +8,10 @@
 6. This tool uses these awesome packages:
       a. https://github.com/danielgtaylor/aglio    
       b. https://github.com/marcbachmann/node-html-pdf    
+
+### Authoring APIBlueprint specs:
+ 1. Install this Atom package: https://atom.io/packages/api-blueprint-preview
+ 2. Press ctrl-shift-a (to see the api spec preview)
+ 
+ ### Future Enhancements 
+ 1. Generate API specs and docs from TLA+ ? [ not sure:-)]
