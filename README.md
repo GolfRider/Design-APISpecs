@@ -14,4 +14,4 @@
  2. Press ctrl-shift-a (to see the api spec preview)
  
  ### Future Enhancements 
- 1. Generate API specs and docs from TLA+ ? [ not sure:-)]
+ 1. Maybe generate API specs and docs from TLA+ (formal specification langiuage) ?  not sure:-) 
