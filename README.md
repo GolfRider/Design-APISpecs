@@ -6,5 +6,5 @@
    ```node gen_api_docs.js main-api-spec.apib```
 5. For modular approach, api spec files can be added to ```main-api-spec.apib``` file
 6. This tool uses these awesome packages:
-    a. https://github.com/danielgtaylor/aglio
-    b. https://github.com/marcbachmann/node-html-pdf
+      a. https://github.com/danielgtaylor/aglio    
+      b. https://github.com/marcbachmann/node-html-pdf    
