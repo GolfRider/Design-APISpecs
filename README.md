@@ -14,7 +14,8 @@
  2. Press ctrl-shift-a (to see the api spec preview)
  
 ### Some more interesting tools
-1. Swagger (popular, but can be little tedious when writing large specs by hand, varied ecosystem depending on the language)
+1. Swagger (https://swagger.io/
+      - popular, but can be little tedious when writing large specs by hand, varied ecosystem depending on the language)
 2. ReDoc  (https://rebilly.github.io/ReDoc/)
 3. Goa.Design (https://goa.design/; go specific dsl)
 
