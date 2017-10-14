@@ -19,6 +19,6 @@
 2. ReDoc  (https://rebilly.github.io/ReDoc/)
 3. Goa.Design (https://goa.design/; go specific dsl)
 
-### 4. Future Enhancements (Just an idea)
+### 4. Future Enhancements (Just an idea :-) )
  1. Maybe generate API specs and docs from TLA+ (formal specification language)  ??
-      - https://www.learntla.com/introduction/  (not sure:-))
+      - https://www.learntla.com/introduction/  
