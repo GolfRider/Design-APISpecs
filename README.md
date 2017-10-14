@@ -13,6 +13,11 @@
  1. Install this Atom package: https://atom.io/packages/api-blueprint-preview
  2. Press ctrl-shift-a (to see the api spec preview)
  
+### Some more interesting tools
+1. Swagger (popular, but can be little tedious when writing large specs by hand, varied ecosystem depending on the language)
+2. ReDoc  (https://rebilly.github.io/ReDoc/)
+3. Goa.Design (https://goa.design/; go specific dsl)
+
  ### Future Enhancements (Just an idea)
  1. Maybe generate API specs and docs from TLA+ (formal specification language)  ??
       - https://www.learntla.com/introduction/  (not sure:-))
